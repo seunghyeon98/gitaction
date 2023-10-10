@@ -26,7 +26,7 @@ jobs:
           NAME: havi98
           REPO: gitaction
         run: |
-          docker build -t $REPO
+          docker build -t $REPO .
           docker tag $REPO:latest $NAME/$REPO:latest
           docker push $NAME/$REPO:latest
       
